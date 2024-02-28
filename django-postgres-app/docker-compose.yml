@@ -12,9 +12,8 @@ services:
       - db_data:/var/lib/postgresql/data
   web:
     build: .
-    command: bash -c "python manage.py runserver & tail -f /dev/null"
     volumes:
-      - .:/code
+      - .:/app
     ports:
       - "8000:8000"
 volumes:
