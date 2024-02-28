@@ -1,0 +1,7 @@
+django
+python-dotenv
+requests
+pytest
+djangorestframework
+markdown
+django-filter
