@@ -1,0 +1,13 @@
+version: '3'
+services:
+  react-app:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./my-app:/my-app
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+      - NODE_ENV=development
+      - REACT_APP_API_URL=http://localhost:8000
+      - PORT=3000
