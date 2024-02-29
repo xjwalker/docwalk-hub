@@ -6,11 +6,10 @@
 `docker pull golang`
 3. Run the image with the following command:
  ```
-docker run -it --rm --name my-golang -v /Users/jwalker4/Documents/code/docwalk-hub/go:/go/src/my-golang -w /go/src/my-golang golang:latest go run hello.go
+docker run --rm --name my-golang -v /Users/jwalker4/Documents/code/docwalk-hub/go:/go/src/my-golang -w /go/src/my-golang golang:latest go run hello.go
 ```
 
 ### keynotes on command:
-- `-it` - interactive mode
 - `--rm` - remove the container after it stops
 - `--name` - name the container
 - `-v` - mount the local directory to the container
